@@ -10,3 +10,8 @@ h1{
 .Menu{
     margin-bottom: 15px;
 }
+
+.label{
+
+    font-weight: bold;
+}
