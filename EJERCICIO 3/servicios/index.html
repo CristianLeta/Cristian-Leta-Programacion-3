@@ -73,12 +73,12 @@
               </li>
  
               <li class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="../productos/crearproducto.html">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg> Agregar Producto
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="../servicios/crearservicio.html">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg> Agregar Servicio
                 </a>
               </li>
@@ -114,9 +114,9 @@
                     <td>$10.000</td>
                     <td>2 hs</td>
                     <td>
-                      <a href="../servicios/servicio1.html" class="link-primary">Ver</a>
-                      <a href="#" class="link-success">Editar</a>
-                      <a href="#" class="link-danger">Eliminar</a>
+                      <a href="./servicio1.html" ><button type="button" class = "btn btn-success">Ver</button></a>
+                      <a href="./editarServicio.html" ><button type="button" class = "btn btn-success">Editar</button></a>
+                      <button type="button" class = "btn btn-danger" ondblclick="return confirmacionDeEliminacion()">Eliminar</button>
                     </td>
                   </tr>
                   <tr>
@@ -125,9 +125,9 @@
                     <td>$20.000</td>
                     <td>3 hs</td>
                     <td>
-                      <a href="../servicios/servicio2.html" class="link-primary">Ver</a>
-                      <a href="#" class="link-success">Editar</a>
-                      <a href="#" class="link-danger">Eliminar</a>
+                      <a href="./servicio2.html" ><button type="button" class = "btn btn-success">Ver</button></a>
+                      <a href="./editarServicio.html" ><button type="button" class = "btn btn-success">Editar</button></a>
+                      <button type="button" class = "btn btn-danger" ondblclick="return confirmacionDeEliminacion()">Eliminar</button>
                     </td>
                   </tr>
                   <tr>
@@ -136,9 +136,9 @@
                     <td>$10.000</td>
                     <td>8 hs</td>
                     <td>
-                      <a href="../servicios/servicio3.html" class="link-primary">Ver</a>
-                      <a href="#" class="link-success">Editar</a>
-                      <a href="#" class="link-danger">Eliminar</a>
+                      <a href="./servicio3.html" ><button type="button" class = "btn btn-success">Ver</button></a>
+                      <a href="./editarServicio.html" ><button type="button" class = "btn btn-success">Editar</button></a>
+                      <button type="button" class = "btn btn-danger" ondblclick="return confirmacionDeEliminacion()">Eliminar</button>
                     </td>
                   </tr>
 
@@ -152,16 +152,21 @@
       </div>
     </div>
 
-
-
-
-
-
-
-
-
-
       <script src="../public/js/dashboard.js"></script>
+      
+      <script type="text/javascript">
+        function confirmacionDeEliminacion()
+        {
+          var respuesta = confirm("¿Está seguro que desea eliminar este articulo?");
+
+          if (respuesta == true)
+          {return  true; }
+  
+          else {return false;}
+  
+        }
+        </script>
+      
 
       <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js" integrity="sha384-uO3SXW5IuS1ZpFPKugNNWqTZRRglnUJK6UAZ/gxOX80nxEkN9NcGZTftn6RzhGWE" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js" integrity="sha384-zNy6FEbO50N+Cg5wap8IKA4M/ZnLJgzc6w2NqACZaK0u0FXfOWRRJOnQtpZun8ha" crossorigin="anonymous"></script><script src="../public/js/dashboard.js"></script>
 </body>
